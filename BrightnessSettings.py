@@ -50,7 +50,7 @@ if path.isdir('/home/pi'):
                         dsktp.writelines('[Desktop Entry] \nComment=Change Brightness on 7inch Touchscreen'+
                                                         '\nTerminal=false \nName=Brightness Setting\nExec=/home/pi/.BrightnessSettings.py'+
                                                         '\nType=Application\nIcon=preferences-desktop-display\nNoDisplay=false\nCategories=System')
-                system('chmod +x /home/pi/.BrightnessSettings.py')
+                system('sudo chmod +x /home/pi/.BrightnessSettings.py')
 ##      ##      ##      ##      ##      ##      ##      ##      ##      ##      ##      ##      ##      ##      ##      ##                
         if path.isfile(brightness):
                 with open(brightness, "r") as brightness:
